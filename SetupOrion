@@ -4880,7 +4880,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   agent:
-    image: portainer/agent:latest ## Versão do portainer
+    image: portainer/agent:2.20.3 ## Versão do portainer
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -4897,7 +4897,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   portainer:
-    image: portainer/portainer-ce:latest
+    image: portainer/portainer-ce:2.20.3
     command: -H tcp://tasks.agent:9001 --tlsskipverify
 
     volumes:
